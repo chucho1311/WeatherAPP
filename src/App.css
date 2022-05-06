@@ -1,38 +1,49 @@
+
+
 .App {
   text-align: center;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App-header{
+  padding: 10px;
+  background-image: url('./img/WhatsApp Image 2022-04-16 at 8.15.03 PM.jpeg');
+  min-height: 97vh;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center;
+  justify-content: center; */
+  font-size: calc(10px + 2vmin);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.div{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.div-2{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  grid-area: 2 span/ 1;
 }
 
-.App-link {
-  color: #61dafb;
+.card{
+  background-color: lightgray;
+  border-radius: 10px;
+  grid-area: 2 span /2;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.number{
+  font-size: calc(80px);
+  margin: 0%;
+}
+
+.button{
+  background-color: lightgray;
+  border: transparent;
+  border-radius: 8px;
+  height: 50px;
 }
